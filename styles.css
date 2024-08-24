@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #3b3b3b);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    background-size: 400% 400%; /* For animated gradient */
+    animation: gradientAnimation 10s ease infinite; /* Animation */
+}
+
+.weather-app {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.weather-app:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.search-bar input:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    border-color: #007bff; /* Border color changes on hover */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 40px #007bff; /* Neon glow effect */
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px #0056b3, 0 0 40px #0056b3, 0 0 60px #0056b3; /* Stronger glow on hover */
+}
+
+/* Style for the weather result sections */
+.weather-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.weather-result .weather-item {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 10px); /* 2 items per row with a gap of 10px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.weather-result .weather-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.weather-result p {
+    margin: 5px 0;
+}
+
+/* Animated Background Gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
