@@ -29,7 +29,7 @@ async function getWeather(location = 'Bangalore') {
 
         document.getElementById('weather-result').innerHTML = weatherInfo;
     } catch (error) {
-        document.getElementById('weather-result').innerHTML = `<p>An error occurred. Please try again.</p>`;
+        document.getElementById('weather-result').innerHTML = `<p>An error occurred. Please try again.</p><br>Have you updated the api key (refer readme.md)? `;
     }
 }
 

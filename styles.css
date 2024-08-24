@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e1e1e, #3b3b3b);
+    background: linear-gradient(135deg, #bf12d6, #0123e2);
     margin: 0;
     padding: 0;
     display: flex;
@@ -48,6 +48,7 @@ body {
 }
 
 .search-bar button {
+    margin-top: 20px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
